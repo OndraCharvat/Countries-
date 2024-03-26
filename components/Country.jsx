@@ -23,6 +23,7 @@ const Country = async () => {
             <img src={post.flags.png} alt={post.flags} />
             <h4>Population: {post.population.toLocaleString()}</h4>
             <h4>Timezone: {post.timezones}</h4>
+            <h4>Borders: {post.borders}</h4>
             <Link href={"/${(country.name).toLowerCase()}"}>Details</Link>
           </div>
         </div>

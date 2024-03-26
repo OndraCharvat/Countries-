@@ -1,6 +1,6 @@
 export async function getInfoData({ params }) {
   const response = await fetch(
-    `https://restcountries.com/v3.1/all${params.id}`
+    `https://restcountries.com/v3.1/name/${params.id}`
   );
 
   if (!response.ok) {
